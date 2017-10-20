@@ -112,7 +112,6 @@ body {
     width: 100%;
 
     font-family: Roboto, Helvetica, SansSerif;
-    border: 1px solid green;
     color: white;
     background-color: black;
 }
@@ -288,10 +287,12 @@ body {
     display: inline-flex;
     position: relative;
     flex-direction: row;
-
+    --slide-height : 90vh;
     width: 100vw;
-    height: 100vh;
+    height: var(--slide-height);
     background: black;
+
+    margin-bottom: 10vh;
 }
 
 .bubble-column{
@@ -302,6 +303,21 @@ body {
 .bubble {
     display: flex;
     flex-direction: row;
+
+    position: absolute;
+
+    border: 1px solid orange;
+    border-radius: 50%;
+
+    top: -30px;
+    left: -70px;
+    width: 45vw;
+    height: 45vw;
+    max-height: 500px;
+    max-width: 500px;
+
+    overflow: visible;
+    background-color: orange;
 }
 
 .bubble-gap {
@@ -310,13 +326,29 @@ body {
 
 #bubble-1 {
     position: absolute;
-    display: inline-flex;
 
     border: 1px solid orange;
     border-radius: 50%;
 
     top: -30px;
     left: -70px;
+    width: 45vw;
+    height: 45vw;
+    max-height: 500px;
+    max-width: 500px;
+
+    overflow: visible;
+    background-color: orange;
+}
+
+#bubble-2 {
+    position: relative;
+
+    border: 1px solid orange;
+    border-radius: 50%;
+
+    top: -30px;
+    right: -70px;
     width: 45vw;
     height: 45vw;
     max-height: 500px;
@@ -336,7 +368,6 @@ body {
     font-size: 3vw;
     display: inline-block;
     flex: 1;
-
 }
 
 .quote-gap {
@@ -345,13 +376,13 @@ body {
 
 .image-column {
     flex: 2;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
 }
 
 .slide-bg-image {
     flex: 4;
-
+    height: 80vh;
     background: black;
 }
 
@@ -367,9 +398,38 @@ body {
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
 }
 
+#slide-2-bg img {
+    border-top: 2px solid orange;
+    position: relative;
+    top:0;
+    left:0;
+    width: 80vw;
+    height: auto;
+
+    overflow: hidden;
+    -webkit-mask-image:-webkit-gradient(linear, right top, right bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
 .slide-textbox {
+    display: flex;
+    text-align: left;
+    flex: 2;
+
+}
+
+.tb-gap-r {
+    flex: 1;
+}
+.tb-gap-l {
     flex: 2;
 }
+
+.tb-quote {
+    flex: 5;
+    font-size: 2vw;
+    margin-top: -5vw;
+}
+
 
 
 
