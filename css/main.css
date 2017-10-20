@@ -293,6 +293,37 @@ body {
     background: black;
 }
 
+.bubble-column{
+    flex: 1;
+    z-index: 5;
+}
+
+#bubble-1 {
+    position: absolute;
+    display: inline-block;
+
+    border: 1px solid orange;
+    border-radius: 50%;
+
+    top: -30px;
+    left: -70px;
+    width: 45vw;
+    height: 45vw;
+    max-height: 500px;
+    max-width: 500px;
+
+    overflow: visible;
+    background-color: orange;
+}
+
+.quote {
+    font-size: 2em;
+    position: absolute;
+    display: inline-block;
+
+    top: 5vw;
+    left: 12vw;
+}
 
 
 
