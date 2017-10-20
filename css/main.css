@@ -430,6 +430,11 @@ body {
     margin-top: -5vw;
 }
 
+#slide-2 {
+    /* TODO: Fix overflow xy issues */
+    overflow-x: hidden;
+    overflow-y: visible;
+}
 
 
 
