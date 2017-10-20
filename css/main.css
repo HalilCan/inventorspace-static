@@ -116,10 +116,21 @@ textarea {
     height: 30px;
 }
 
+.header-section {
+    display:flex;
+}
+
 #header-1 {
     background-color: black;
     color: white;
+}
 
+#header-1-section-1 {
+    flex: 1;
+}
+
+#header-1-section-2 {
+    flex: 2;
 }
 
 #header-2 {
