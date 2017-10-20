@@ -107,6 +107,7 @@ body {
     flex-direction: column;
     width: 100%;
 
+    font-family: Roboto, Helvetica, SansSerif;
     border: 1px solid green;
     color: white;
     background-color: black;
@@ -129,11 +130,18 @@ body {
     flex: 1;
 }
 
+.logo {
+    width: 50px;
+   position: fixed;
+    z-index: 10;
+    left: 47%;
+    top: 5px;
+}
+
 #header-1 {
     background-color: black;
     color: white;
 }
-
 #header-1-section-1 {
     flex: 1;
 }
@@ -150,9 +158,25 @@ body {
     flex: 1;
 }
 
+
 #header-2 {
     background-color: white;
     color: black;
+}
+#header-2-section-1 {
+    flex: 1;
+}
+#header-2-section-2 {
+    flex: 3;
+}
+#header-2-section-3 {
+    flex: 1;
+}
+#header-2-section-4 {
+    flex: 3;
+}
+#header-2-section-5 {
+    flex: 1;
 }
 
 
