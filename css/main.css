@@ -97,6 +97,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: black;
+}
+
 .viewport {
     position: absolute;
     display: flex;
@@ -120,6 +124,11 @@ textarea {
     display:flex;
 }
 
+.header-link {
+    padding-top: 3px;
+    flex: 1;
+}
+
 #header-1 {
     background-color: black;
     color: white;
@@ -128,9 +137,17 @@ textarea {
 #header-1-section-1 {
     flex: 1;
 }
-
 #header-1-section-2 {
-    flex: 2;
+    flex: 3;
+}
+#header-1-section-3 {
+    flex: 1;
+}
+#header-1-section-4 {
+    flex: 3;
+}
+#header-1-section-5 {
+    flex: 1;
 }
 
 #header-2 {
