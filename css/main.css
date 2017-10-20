@@ -287,6 +287,7 @@ body {
 .slide {
     display: inline-flex;
     position: relative;
+    flex-direction: row;
 
     width: 100vw;
     height: 100vh;
@@ -298,9 +299,18 @@ body {
     z-index: 5;
 }
 
+.bubble {
+    display: flex;
+    flex-direction: row;
+}
+
+.bubble-gap {
+    flex: 2;
+}
+
 #bubble-1 {
     position: absolute;
-    display: inline-block;
+    display: inline-flex;
 
     border: 1px solid orange;
     border-radius: 50%;
@@ -316,13 +326,21 @@ body {
     background-color: orange;
 }
 
-.quote {
-    font-size: 2em;
-    position: absolute;
-    display: inline-block;
+.quote-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
-    top: 5vw;
-    left: 12vw;
+.quote {
+    font-size: 3vw;
+    display: inline-block;
+    flex: 1;
+
+}
+
+.quote-gap {
+    flex:1;
 }
 
 .image-column {
@@ -338,12 +356,14 @@ body {
 }
 
 .slide-bg-image img {
-    position:absolute;
+    border-top: 2px solid orange;
+    position: relative;
     top:0;
     left:0;
-    width: 70vw;
+    width: 80vw;
     height: auto;
 
+    overflow: hidden;
     -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
 }
 
