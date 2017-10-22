@@ -134,6 +134,8 @@ body {
 .header-link {
     padding-top: 3px;
     flex: 1;
+    transform: translate(-50%, 0);
+    text-align:center;
 }
 
 .logo {
@@ -185,13 +187,13 @@ body {
     flex: 1;
 }
 #header-1-section-2 {
-    flex: 3;
+    flex: 4;
 }
 #header-1-section-3 {
     flex: 1;
 }
 #header-1-section-4 {
-    flex: 3;
+    flex: 4;
 }
 #header-1-section-5 {
     flex: 1;
@@ -292,7 +294,7 @@ body {
     height: var(--slide-height);
     background: black;
 
-    margin-bottom: 10vh;
+    margin-bottom: 10vw;
 }
 
 .bubble-column{
@@ -431,11 +433,55 @@ body {
 }
 
 #slide-2 {
-    /* TODO: Fix overflow xy issues */
-    overflow-x: hidden;
-    overflow-y: visible;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
 }
 
+#love-hate-box {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    padding-top: 30vh;
+    background-color: red;
+}
+
+.lh-line {
+    font-size: 1.5em;
+    width: 100vw;
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: center;
+    flex: 1;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+
+#lh-line-1 {
+    top: 40%;
+}
+
+#lh-line-2 {
+    top: 53%;
+}
+
+#lh-line-3 {
+    top: 65%;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.invent-col {
+    flex: 1;
+}
 
 
 
