@@ -434,7 +434,7 @@ body {
 
 #slide-2 {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     text-align: center;
 }
 
@@ -469,11 +469,11 @@ body {
 }
 
 #lh-line-2 {
-    top: 53%;
+    top: 56%;
 }
 
 #lh-line-3 {
-    top: 65%;
+    top: 67%;
     display: inline-flex;
     flex-direction: row;
     width: 100%;
