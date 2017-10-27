@@ -1,22 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-* {
+.card-row {
     box-sizing: border-box;
 }
 
-body {
-    background-image: -webkit-linear-gradient(left, #034378, #2d4e68);
-    background-image: linear-gradient(to right, #034378, #2d4e68);
+.card-row {
+    background-image: -webkit-linear-gradient(left, #000000, #090f14);
+    background-image: linear-gradient(to right, #000000, #080d12);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 100vh;
+    height: 420px;
     font-family: "Open Sans", sans-serif;
 }
 
-a {
+.card-row a {
     text-decoration: none;
 }
 
-h1 {
+.card-row h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
 }
@@ -29,7 +29,8 @@ h1 {
 .card {
     float: left;
     padding: 0 1.7rem;
-    width: 50%;
+    width: 300px;
+    height: 400px;
 }
 .card .menu-content {
     margin: 0;
@@ -207,6 +208,10 @@ h1 {
 .example-2 .wrapper {
     background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;
 }
+.example-2 .wrapper {
+    background: url(http://image.shutterstock.com/display_pic_with_logo/169889936/582759238/stock-vector-white-outline-avatar-silhouette-default-anonymous-faceless-unisex-profile-picture-person-human-582759238.jpg) center/cover no-repeat;
+}
+
 .example-2 .wrapper:hover .menu-content span {
     -webkit-transform: translate(-50%, -10px);
     transform: translate(-50%, -10px);
