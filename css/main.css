@@ -480,7 +480,7 @@ body {
 
 #slide-2 {
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     text-align: center;
     display: inline-flex;
     flex-direction: row;
@@ -491,23 +491,21 @@ body {
 }
 
 #love-hate-box {
-    position: absolute;
-    top: 40vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
+    position: relative;
 
     display: inline-flex;
     flex-direction: row;
 
-    width: 100vw;
+    width: 90vw;
     max-width: 800px;
-    height: 70vh;
+    height: auto;
 
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     flex: 10;
 
-    padding-top: 30vh;
+    margin-top: 50vh;
     background-color: red;
 }
 
