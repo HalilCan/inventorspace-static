@@ -142,7 +142,8 @@ body {
     width: 50px;
    position: fixed;
     z-index: 10;
-    margin-left: 46vw;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
     top: 5px;
 }
 
@@ -304,7 +305,7 @@ body {
 
 .bubble {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     position: absolute;
 
@@ -323,7 +324,7 @@ body {
 }
 
 .bubble-gap {
-    flex: 2;
+    flex: 1;
 }
 
 #bubble-1 {
@@ -333,7 +334,6 @@ body {
     border-radius: 50%;
 
     top: -30px;
-    left: -70px;
     width: 45vw;
     height: 45vw;
     max-height: 500px;
@@ -341,6 +341,18 @@ body {
 
     overflow: visible;
     background-color: orange;
+}
+
+@media screen and (min-width: 0px) {
+    #bubble-1 {
+        left: -10vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #bubble-1 {
+        left: -50px;
+    }
 }
 
 #bubble-2 {
@@ -361,19 +373,53 @@ body {
 }
 
 .quote-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    flex: 3;
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .quote {
-    font-size: 3vw;
     display: inline-block;
-    flex: 1;
+    flex: 3;
+}
+
+@media screen and (min-width: 0px) {
+    .quote {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .quote {
+        font-size: 3.7vw;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .quote {
+        font-size: 3.7vw;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .quote {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .quote {
+        font-size: 45px;
+    }
 }
 
 .quote-gap {
-    flex:1;
+    flex:2;
+}
+
+#q1-gap-1 {
+    flex: 2;
 }
 
 .image-column {
@@ -472,14 +518,23 @@ body {
 }
 
 .lh-line {
-    border: 1px solid white;
-    font-size: 1.5em;
     width: 100%;
-    margin-top: 20px;
     text-align: center;
     flex: 1;
     position: relative;
     display: block;
+}
+
+@media screen and (min-width: 500px) {
+    .lh-line {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lh-line {
+        font-size: 5vw;
+    }
 }
 
 #lh-mid {
@@ -487,18 +542,15 @@ body {
 }
 
 #lh-line-1 {
-    border: 1px solid green;
-    top: 20vh;
+    top: 18vh;
 }
 
 #lh-line-2 {
-    border: 1px solid red;
-    top: 17vh;
+    top: 19vh;
 }
 
 #lh-line-3 {
-    border: 1px solid blue;
-    top: 15vh;
+    top: 21vh;
     display: inline-flex;
     flex-direction: row;
 }
