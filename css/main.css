@@ -148,6 +148,10 @@ body {
     }
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 .header-section {
     display:flex;
