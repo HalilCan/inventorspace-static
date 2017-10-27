@@ -436,47 +436,71 @@ body {
     width: 100vw;
     height: 70vh;
     text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.lh-gap {
+    flex: 1;
 }
 
 #love-hate-box {
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    display: inline-flex;
+    flex-direction: row;
+
     width: 100vw;
+    max-width: 800px;
     height: 70vh;
+
+    margin: auto;
+    text-align: center;
+    flex: 10;
+
     padding-top: 30vh;
     background-color: red;
 }
 
+.lh-column {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
 .lh-line {
+    border: 1px solid white;
     font-size: 1.5em;
-    width: 100vw;
-    max-width: 800px;
+    width: 100%;
     margin-top: 20px;
     text-align: center;
     flex: 1;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     display: block;
 }
 
+#lh-mid {
+    max-width: 800px;
+}
 
 #lh-line-1 {
-    top: 40%;
+    border: 1px solid green;
+    top: 20vh;
 }
 
 #lh-line-2 {
-    top: 56%;
+    border: 1px solid red;
+    top: 17vh;
 }
 
 #lh-line-3 {
-    top: 67%;
+    border: 1px solid blue;
+    top: 15vh;
     display: inline-flex;
     flex-direction: row;
-    width: 100%;
 }
 
 .invent-col {
