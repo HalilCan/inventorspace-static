@@ -127,6 +127,28 @@ body {
     height: 30px;
 }
 
+@media screen and (max-width: 500px) {
+    .header {
+        line-height: 25px;
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .header {
+        line-height: 25px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .header {
+        line-height: 25px;
+        font-size: 15px;
+    }
+}
+
+
 .header-section {
     display:flex;
 }
@@ -403,10 +425,15 @@ body {
 
 @media screen and (min-width: 1000px) {
     .quote {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .quote {
+        font-size: 40px;
+    }
+}
 
 @media screen and (min-width: 1500px) {
     .quote {
