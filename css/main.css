@@ -371,6 +371,12 @@ a {
 
 @media screen and (min-width: 0px) {
     #bubble-1 {
+
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #bubble-1 {
         left: -10vw;
     }
 }

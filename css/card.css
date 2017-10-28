@@ -29,8 +29,8 @@
 .card {
     float: left;
     padding: 0 1.7rem;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
 }
 .card .menu-content {
     margin: 0;
@@ -62,7 +62,7 @@
 }
 .card .wrapper {
     background-color: #fff;
-    min-height: 400px;
+    min-height: 300px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
