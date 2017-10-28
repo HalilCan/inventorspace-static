@@ -369,12 +369,6 @@ a {
     background-color: orange;
 }
 
-@media screen and (min-width: 0px) {
-    #bubble-1 {
-
-    }
-}
-
 @media screen and (min-width: 500px) {
     #bubble-1 {
         left: -10vw;
@@ -594,7 +588,43 @@ a {
     flex: 1;
 }
 
+@media screen and (max-width: 500px) {
+    #bubble-1 {
+        left: 50vw;
+        top: 20vh;
+        width: 80vw;
+        height: 80vw;
+        transform: translate(-50%, 0);
 
+        font-size: 50px;
+    }
+
+    .quote {
+        overflow: visible;
+        font-size: 3.7vh;
+    }
+
+    .image-column {
+        display: none;
+
+    }
+
+    .slide {
+        height: auto;
+    }
+    .slide-bg-image img {
+        border-top: 2px solid orange;
+        position: relative;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: auto;
+
+        overflow: hidden;
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+    }
+
+}
 
 
 
