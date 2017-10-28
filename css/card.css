@@ -4,6 +4,7 @@
 }
 
 .card-row {
+    padding-top: 100px;
     background-image: -webkit-linear-gradient(left, #000000, #090f14);
     background-image: linear-gradient(to right, #000000, #080d12);
     -webkit-font-smoothing: antialiased;
