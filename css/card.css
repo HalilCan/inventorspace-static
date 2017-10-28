@@ -208,9 +208,6 @@
 .example-2 .wrapper {
     background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;
 }
-.example-2 .wrapper {
-    background: url(http://image.shutterstock.com/display_pic_with_logo/169889936/582759238/stock-vector-white-outline-avatar-silhouette-default-anonymous-faceless-unisex-profile-picture-person-human-582759238.jpg) center/cover no-repeat;
-}
 
 .example-2 .wrapper:hover .menu-content span {
     -webkit-transform: translate(-50%, -10px);
